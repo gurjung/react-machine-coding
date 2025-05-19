@@ -27,9 +27,10 @@ tests/ → Optional test cases for each component
 
 ## ✅ Completed Problems
 
-| Problem          | Path                            | Status |
-|------------------|----------------------------------|--------|
+| Problem          | Path                                         | Status |
+|------------------|----------------------------------------------|--------|
 | Counter App       | `src/components/counter-app/CounterApp.tsx` | ✅ Done |
+| Todo Input App       | `src/components/todo-input-app/CounterApp.tsx` | ✅ Done |
 
 ---
 
