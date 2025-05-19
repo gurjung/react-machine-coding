@@ -1,5 +1,5 @@
 import "./App.css";
-import CounterApp from "./components/CounterApp";
+import CounterApp from "./components/counter-app/CounterApp";
 
 function App() {
   return (

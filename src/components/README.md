@@ -29,7 +29,7 @@ tests/ → Optional test cases for each component
 
 | Problem          | Path                            | Status |
 |------------------|----------------------------------|--------|
-| Counter App       | `src/components/CounterApp.tsx` | ✅ Done |
+| Counter App       | `src/components/counter-app/CounterApp.tsx` | ✅ Done |
 
 ---
 
