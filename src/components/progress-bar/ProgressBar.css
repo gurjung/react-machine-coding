@@ -1,0 +1,23 @@
+.container {
+  border: 1px solid #3a3630;
+  width: 500px;
+  border-radius: 20px;
+  background: lightgray;
+  position: relative;
+  overflow: hidden;
+  height: 25px;
+}
+
+.container span {
+  position: relative;
+  z-index: 2;
+}
+
+.progress {
+  position: absolute;
+  background: green;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: transform 0.3s ease;
+}
