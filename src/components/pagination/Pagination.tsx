@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./pagination.css";
+import { useTheme } from "../context/ThemeProvider";
 
 const ROWS_PER_PAGE = 10;
 
 const Pagination = () => {
-    // TO DO -> Make it windowed pagination
+  const context = useTheme();
+  const { darkMode } = context;
+  console.log(darkMode);
+  // TO DO -> Make it windowed pagination
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState<number>(0);
   const [totalPages, setTotalPages] = useState<number>(0);
