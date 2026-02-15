@@ -3,18 +3,20 @@ import "./App.css";
 // import { ThemeProvider } from "./components/context/ThemeProvider";
 // import Pagination from "./components/pagination/Pagination";
 import ProgressBar from "./components/progress-bar/ProgressBar";
+import StarRating from "./components/star-rating/StarRating";
 // import CounterApp from "./components/counter-app/CounterApp";
 // import TodoApp from "./components/todo-input-app/TodoApp";
 
 function App() {
   return (
     // <ThemeProvider>
-      /* <CounterApp /> */
-      /* <TodoApp /> */
-      // <Pagination />
+    /* <CounterApp /> */
+    /* <TodoApp /> */
+    // <Pagination />
     // </ThemeProvider>
     <>
-      <ProgressBar value={67}/>
+      {/* <ProgressBar value={67}/> */}
+      <StarRating />
     </>
   );
 }

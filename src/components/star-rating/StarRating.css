@@ -1,0 +1,17 @@
+.star {
+  font-size: 40px;
+  cursor: pointer;
+  color: #d6d6d6;
+}
+
+.star.active {
+  color: gold;
+}
+
+.star.hover {
+  color: gold;
+}
+
+.star.active.hover {
+  color: #ffc107;
+}
