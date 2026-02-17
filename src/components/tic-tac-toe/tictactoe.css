@@ -1,0 +1,15 @@
+.blocks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.block {
+  color: white;
+  min-height: 60px;
+  min-width: 60px;
+}
+
+.reset-btn {
+    color: white;
+}
