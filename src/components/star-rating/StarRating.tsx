@@ -39,8 +39,9 @@ const StarRating = ({ count = 5 }) => {
             onClick={() => onClickStar(index)}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            role="button"
-            tabIndex={0}
+            role="radio"
+            aria-checked={starNo === index + 1}
+            tabIndex={starNo === index + 1 ? 0 : -1}
             aria-label={`Rate ${index + 1} stars`}
             onKeyDown={(e) => {
               if (e.key === "Enter") {

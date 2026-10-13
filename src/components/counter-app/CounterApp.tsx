@@ -4,7 +4,7 @@ const MAX_LIMIT = 10;
 const MIN_LIMIT = 0;
 
 const CounterApp = () => {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState<number>(MIN_LIMIT);
   const handleButtonClick = (type: "inc" | "dec", qty?: number) => {
     const newQty = qty ?? 1;
     if (type === "inc") {

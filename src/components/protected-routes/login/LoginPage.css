@@ -1,0 +1,23 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.form-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-input-container label {
+  width: 80px;
+}
+
+.form-input {
+  border-radius: 6px;
+  padding: 5px;
+}

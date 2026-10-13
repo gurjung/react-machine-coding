@@ -44,3 +44,5 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     </ThemeContext.Provider>
   );
 };
+
+// window.matchMedia("(prefers-color-scheme: dark)") for system defined theme

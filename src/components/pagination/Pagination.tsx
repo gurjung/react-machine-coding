@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./pagination.css";
-import { useTheme } from "../context/ThemeProvider";
+import { ThemeContext, useTheme } from "../context/ThemeProvider";
 
 const ROWS_PER_PAGE = 10;
 
 const Pagination = () => {
-  const context = useTheme();
-  const { darkMode } = context;
+  // const context = useTheme();
+  const context = useContext(ThemeContext);
+  const { darkMode, toggleTheme } = context || {};
   console.log(darkMode);
   // TO DO -> Make it windowed pagination
   const [products, setProducts] = useState([]);
@@ -43,8 +44,9 @@ const Pagination = () => {
   };
   return (
     <>
-      <div>
+      <div onClick={toggleTheme}>
         {/* render products here on UI. Also we can add shimmer effect, handle error */}
+        {`Toggle Theme -> Mode = ${darkMode}`}
       </div>
       <div>
         <button disabled={page <= 0} onClick={onPrevious}>
